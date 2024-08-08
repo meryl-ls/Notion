@@ -27,43 +27,41 @@
 
         .form {
         display: inline-block;
+        min-width: 120px;
         padding: 10px 25px 10px 25px;
         border-radius: 10px;
         background: #191919;
-        width: 80vw;
+        width: 10vw;
         border: 2px solid #fff;
         color: #fff;
         }
 
         .form:hover {border: 2px solid #ebebeb;}
 
-        .season {min-width: 50px;
-        display: inline;}
+        .season {min-width: 100px;
+        display: inline-block;}
 
-        .date {min-width: 50px;
-        display: inline;
-        padding-right: 30px;
-        font-size: 2em;
+        .date {min-width: 100px;
+        display: block;
+        font-size: 1em;
         }
 
-        .time {min-width: 50px;
-        display: inline;
-        padding-right: 30px;
-        font-size: 2em;}
+        .time {min-width: 100px;
+        display: block;
+        font-size: 1em;}
 
         .colon {display: inline;}
 
-        .icon {display: inline;
-        vertical-align:top;
+        .icon {display: block;
+        font-size: 1em;
         }
 
-        .greet {display: inline;
-        padding-right: 30px;
-        padding-left: 15px;
-        font-size: 2em;
+        .greet {display: block;
+        font-size: 1em;
+        font-weight: bold;
         }
 
-        .date {display: inline;
+        .date {display: block;
         font-variant: small-caps;}
 
         .hour {display: inline;}
@@ -139,7 +137,7 @@ document.getElementById('date').innerHTML = today.toDateString();
         
     else if (hh >= 17 && hh <= 24) {
         greet = 'Good Evening';
-        icon = '<i class="fa-solid fa-moon fa-2xl" style="color: #fff;"></i>';
+        icon = '<i class="fa-solid fa-moon fa-2xl" style="color: #fff"></i>';
     }
        
     
